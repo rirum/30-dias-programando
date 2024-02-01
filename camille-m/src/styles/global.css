@@ -1,0 +1,11 @@
+/* styles/globals.css */
+
+/* Importar o reset CSS, se desejar */
+@import 'normalize.css/normalize.css';
+
+/* Importar o Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'tailwindcss/reset';
