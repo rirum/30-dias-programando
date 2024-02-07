@@ -8,6 +8,8 @@ export const StyledHeader = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(226, 232, 240);
 `
 export const StyledLink = styled(Link)`
     text-decoration: none;
