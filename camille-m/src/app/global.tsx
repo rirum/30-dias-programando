@@ -7,8 +7,8 @@ const GlobalCSS = createGlobalStyle`
 margin: 0;
 text-decoration: none;
 box-sizing: border-box;
-color:inherit;
-
+color: inherit;
+text-decoration: none;
 }
 
 `;
