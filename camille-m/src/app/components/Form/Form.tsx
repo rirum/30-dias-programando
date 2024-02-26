@@ -1,56 +1,47 @@
-import { GoPerson } from "react-icons/go";
-import { BsBoxSeam } from "react-icons/bs";
-import { LuWallet } from "react-icons/lu";
-import { StyledForm, Aside, StyledIcons, DetailsAccount, StyledButtonAccount, StyledButtonStillBuying } from "./styles";
-export default function Form(){
-return(
+import { GoPerson } from 'react-icons/go';
+import { BsBoxSeam } from 'react-icons/bs';
+import { LuWallet } from 'react-icons/lu';
+import { StyledForm, Aside, StyledIcons, DetailsAccount } from './styles';
+import CreateAccount from '../Buttons/CreateAccount/CreateAccountButton';
+import StillBuying from '../Buttons/StillBuying/StillBuyingButton';
+export default function Form() {
+  return (
     <StyledForm>
-            
-        <Aside>
-            <StyledIcons>
-            <GoPerson/>
-            <p>Conta</p>
-            </StyledIcons>
-          
-            <p> - </p>
+      <Aside>
+        <StyledIcons>
+          <GoPerson />
+          <p>Conta</p>
+        </StyledIcons>
 
-            <StyledIcons>
-            <BsBoxSeam/>
-            <p>Envio</p>
-            </StyledIcons>
+        <p> - </p>
 
-            <p> - </p>
+        <StyledIcons>
+          <BsBoxSeam />
+          <p>Envio</p>
+        </StyledIcons>
 
-            <StyledIcons>
-            <LuWallet/>
-            <p>Pagamento</p>
-            </StyledIcons>
-         </Aside>
+        <p> - </p>
 
-        <DetailsAccount>
-            <h1>Detalhes da conta</h1>
+        <StyledIcons>
+          <LuWallet />
+          <p>Pagamento</p>
+        </StyledIcons>
+      </Aside>
 
-            <form>
-                <p>Email</p>
-                <input placeholder="e-mail"></input>
-                <p>Senha</p>
-                <input placeholder="password"></input>
-            </form>
+      <DetailsAccount>
+        <h1>Detalhes da conta</h1>
 
-            <StyledButtonAccount>
-                <p>Registre-se para conta</p>
-                <button>Entrar</button>
-            </StyledButtonAccount>
-        </DetailsAccount>
+        <form>
+          <p>Email</p>
+          <input placeholder="e-mail"></input>
+          <p>Senha</p>
+          <input placeholder="password"></input>
+        </form>
 
-        
-        
-        <StyledButtonStillBuying>
-                 <p>Cancelar pedido</p>
-                <button>Continuar comprando</button>
-        </StyledButtonStillBuying>
+        <CreateAccount />
+      </DetailsAccount>
 
+      <StillBuying />
     </StyledForm>
-)
+  );
 }
-
