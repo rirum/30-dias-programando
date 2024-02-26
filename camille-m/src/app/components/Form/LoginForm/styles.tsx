@@ -1,40 +1,34 @@
 import styled from 'styled-components';
 
 export const StyledForm = styled.div`
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   margin-top: 80px;
-`;
 
-export const Aside = styled.div`
-  display: flex;
-  width: 500px;
-  justify-content: space-between;
-
-  p {
-    font-size: 18px;
-    margin-left: 5px;
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
   }
-`;
-export const StyledIcons = styled.div`
-  display: flex;
-  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    margin-top: 20px;
+  }
 `;
 
 export const DetailsAccount = styled.div`
   justify-content: flex-start;
-  margin-top: 60px;
+  margin-top: 30px;
   border-bottom: 0.5px solid #b4b6b9;
 
   h1 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
   }
   p {
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(113, 128, 150);
   }
   input {
-    width: 600px;
+    width: 100%;
     height: 40px;
     box-sizing: border-box;
     border: 1px solid #b4b6b9;
@@ -42,7 +36,14 @@ export const DetailsAccount = styled.div`
     background: #f9f9f9;
 
     ::placeholder {
-      font-size: 14px;
+      font-size: 12px;
     }
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 10px;
   }
 `;

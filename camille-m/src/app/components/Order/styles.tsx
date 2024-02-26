@@ -10,6 +10,11 @@ export const StyledOrder = styled.div`
     font-weight: 600;
     font-size: 20px;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+    margin-left: 0;
+  }
 `;
 
 export const ProductImage = styled.div`
@@ -21,6 +26,9 @@ export const ProductImage = styled.div`
   p {
     font-weight: 700;
     font-size: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
   }
 `;
 
