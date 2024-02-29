@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import LoginForm from './components/Form/LoginForm/LoginForm';
 import Order from './components/Order/Order';
 import AddressForm from './components/Form/AddressForm/AddressForm';
+import PaymentForm from './components/Form/PaymentForm/PaymentForm';
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
       <Header />
       <Background>
         {/* <LoginForm></LoginForm> */}
-        <AddressForm></AddressForm>
+        {/* <AddressForm></AddressForm> */}
+        <PaymentForm></PaymentForm>
         <Order></Order>
       </Background>
     </>
